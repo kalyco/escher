@@ -1,0 +1,22 @@
+@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
+// Change the grid settings
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 1200px;
+// Define your breakpoints
+$mobile: new-breakpoint(max-width 480px 12);
+$tablet: new-breakpoint(max-width 768px 12);
+$desktop: new-breakpoint(max-width 1440px 12);
+//responsive images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+//visibility class
+@mixin hidden-sm {
+   @include media($mobile){
+    display: none;
+  }
+}

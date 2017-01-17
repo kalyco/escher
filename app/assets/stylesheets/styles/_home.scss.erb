@@ -1,0 +1,70 @@
+//wraps the hero section
+
+.home-hero {
+  height: 500px;
+  width: 100%;
+  float: right;
+  clear: both;
+  background-position: center center;
+  background-size: cover;
+  @media($mobile) {
+    height: 200px;
+  }
+}
+
+//wraps the topbar
+
+.topbar-wrapper {
+  display: block;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: linear-gradient( rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91) ), url('<%=asset_path 'small_steps.png' %>');
+}
+
+.topbar-container {
+  @include outer-container;
+  padding: 10px 15px;
+}
+
+//navigation links
+
+.topbar-content {
+	width: 100%;
+  display: flex;
+	justify-content: space-between;
+  padding: 15px 15px 0 0;
+  font-size: 26px;
+
+  .topbar-links {
+		display: flex;
+  	font-family: "RobotoSlab-Regular";
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+  }
+
+  .topbar-links:nth-last-of-type(1) {
+    padding-right: 0;
+  }
+}
+
+.home-hero-content {
+  @include outer-container;
+  padding: 85px 15px 0;
+  text-align: center;
+  color: white;
+
+	.home-hero-content-header {
+	  color: white;
+	  font-size: 4.6em;
+	  font-weight: 100;
+	}
+
+	.home-hero-content-subheader {
+	  color: white;
+	  font-weight: 1em;
+	}
+}
