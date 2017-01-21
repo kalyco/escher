@@ -17,7 +17,20 @@
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.glyphicon-remove {
+  padding-left: 5%;
+  text-decoration: none;
+  font-size: 2vw;
+  color: inherit;
+  top: 25px;
+}
+
+a.toggle-menu {
+    color: inherit;
+}
+
 ul.nav-links {
+    padding-top: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,3 +72,4 @@ ul.nav-links {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+

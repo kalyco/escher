@@ -18,7 +18,5 @@ $(document).keyup(function(e) {
 
 // Hide any open modals
 function hideAllModals() {
-	console.log("hi");
-  $("#modal-window").fadeOut(150);
-  $(".modal-backdrop").fadeOut(150);
+  $('.toggle-menu').click();
 }
