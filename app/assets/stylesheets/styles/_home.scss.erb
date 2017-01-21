@@ -12,6 +12,11 @@
   }
 }
 
+//menu icon
+
+.glyphicon-menu-hamburger {
+}
+
 //wraps the topbar
 
 .topbar-wrapper {
@@ -24,7 +29,7 @@
   background: linear-gradient( rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91) ), url('<%=asset_path 'small_steps.png' %>');
 }
 
-.topbar-container {
+#topbar-container {
   @include outer-container;
   padding: 10px 15px;
 }
@@ -38,12 +43,16 @@
   padding: 15px 15px 0 0;
   font-size: 26px;
 
-  .topbar-links {
+  .topbar-links {  
 		display: flex;
   	font-family: "RobotoSlab-Regular";
     color: white;
     text-decoration: none;
     padding-right: 10px;
+  }
+
+  .topbar-links:hover {
+    text-decoration: underline;
   }
 
   .topbar-links:nth-last-of-type(1) {
@@ -52,19 +61,31 @@
 }
 
 .home-hero-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   @include outer-container;
   padding: 85px 15px 0;
-  text-align: center;
-  color: white;
 
-	.home-hero-content-header {
-	  color: white;
-	  font-size: 4.6em;
-	  font-weight: 100;
-	}
+  .left-panel {
 
-	.home-hero-content-subheader {
-	  color: white;
-	  font-weight: 1em;
-	}
+    .home-hero-content-header {
+      text-align: center;
+      font-size: 4.6em;
+      font-weight: 100;
+    }
+
+    .home-hero-content-subheader {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 100;
+    }
+  }
+
+  .right-panel {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    background-image: url('<%=asset_path 'bird_fish.jpg' %>');
+  }
 }

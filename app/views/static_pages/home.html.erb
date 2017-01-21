@@ -3,25 +3,25 @@
 <div class="home-hero">
   <!-- topbar-content -->
 	<div class="topbar-wrapper">
-		<div class="topbar-container">
-      <div class="topbar-content">
-        <a class="topbar-links gallery" href="#0">Gallery</a>
-        <a class="topbar-links original" href="#0">Original Prints</a>
-				<a class="topbar-links featured" href="#0">Featured</a>
-				<a class="topbar-links about-escher" href="#0">About Escher</a>
-				<a class="topbar-links techniques" href="#0">Techniques</a>
+		<div id="topbar-container" class="container-fluid">
+      <div class="row">
+        <i class="glyphicon glyphicon-menu-hamburger col-xs-3"></i>
       </div>
     </div>
   </div>
   <!-- end topbar -->
   <!-- hero-content -->
   <div class="home-hero-content">
-    <h1 class="home-hero-content-header">
-      <% provide(:header, t(".header")) %>
-    </h1>
-    <h3 class="home-hero-content-subheader">
-      <% provide(:subheader, t(".subheader")) %>
-    </h3>
+    <div class="left-panel">
+      <h1 class="home-hero-content-header">
+        <%= t(".header") %>
+      </h1>
+      <h3 class="home-hero-content-subheader">
+        <%= t(".subheader") %>
+      </h3>
+    </div>
+      <div class="right-panel">
+      </div>
   </div>
   <!-- end hero content -->
 </div>

@@ -1,3 +1,7 @@
+// bootstrap
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 //helpers and globals
 @import "bourbon/bourbon";
 @import "globals/grid";
@@ -6,3 +10,4 @@
 
 //page styles
 @import "styles/home";
+
