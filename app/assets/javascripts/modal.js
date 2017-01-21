@@ -1,0 +1,24 @@
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+// Close any share modal when escape key is pressed
+$(document).keyup(function(e) {
+  if (e.keyCode == 27) {
+    e.preventDefault();
+    hideAllModals();
+  }
+});
+
+// Hide any open modals
+function hideAllModals() {
+	console.log("hi");
+  $("#modal-window").fadeOut(150);
+  $(".modal-backdrop").fadeOut(150);
+}

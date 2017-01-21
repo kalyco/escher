@@ -15,6 +15,13 @@
 //menu icon
 
 .glyphicon-menu-hamburger {
+  padding-left: 5%;
+  text-decoration: none;
+  font-size: 16px; 
+  font-size: 4vw;
+  position: absolute;
+  color: inherit;
+  top: 25px;
 }
 
 //wraps the topbar
@@ -48,11 +55,9 @@
   	font-family: "RobotoSlab-Regular";
     color: white;
     text-decoration: none;
-    padding-right: 10px;
   }
 
   .topbar-links:hover {
-    text-decoration: underline;
   }
 
   .topbar-links:nth-last-of-type(1) {
@@ -88,4 +93,8 @@
     display: flex;
     background-image: url('<%=asset_path 'bird_fish.jpg' %>');
   }
+}
+
+ul { 
+  list-style-type: none;
 }
