@@ -1,23 +1,16 @@
 class PiecesController < ApplicationController
+	before_action :set_pieces, only: [:index ]
 
 	def index
-	end
+  	if params[:search]
+    	@pieces = Piece.search(params[:search]).order("featured DESC")
+  	else
+    	@pieces = Piece.all.order('featured DESC')
+    end
+  end
 
-	def create
-	end
-
-	def new
-	end
-
-	def show
-	end
-
-	def edit
-	end
-
-	def update
-	end
-
-	def destroy
-	end
+  private
+  	def set_pieces
+		 @pieces = Piece.all
+  	end
 end
