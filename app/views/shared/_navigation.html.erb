@@ -3,13 +3,12 @@
 	<div id="topbar-container" class="container-fluid">
 		<div class='row'>
 			<div class='nav navbar-left'>
-				<form class='site-nav__item site-nav__item--searchbar js-searchbar js-header-livesearch' hidden='true'>
+				<form class='site-nav_form site-nav__item--searchbar js-searchbar js-header-livesearch' hidden='true'>
 					<%= form_tag(pieces_path, :method => "get", id: "search-form", display: "hidden") do %>
-						<%= text_field_tag :search, params[:search] %>
-						<%= submit_tag "Search" %>
-					<i class='glyphicon glyphicon-search js-search-icon'>
-						<use xlink:href='#search'></use>
-					</i>
+						<%= text_field_tag :search, params[:search], class: "search-box" %>
+						<%= button_tag(type: "submit", class: "search-btn") do %>
+							<i class="glyphicon glyphicon-search search-enter"></i>
+						<% end %>
 					<% end %>
 				</form>
 

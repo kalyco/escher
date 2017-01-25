@@ -41,7 +41,7 @@
     height: 100%;
 }
 
-.glyphicon-remove {
+.glyphicon-remove.menu-remove {
   padding-left: 5%;
   text-decoration: none;
   font-size: 2vw;
@@ -49,7 +49,7 @@
   top: 25px;
 }
 
-a.toggle-menu {
+a, a:focus, focus {
     color: inherit;
 }
 
@@ -78,6 +78,10 @@ ul.nav-links {
 }
 
 .glyphicon:hover {
+    color: rgb(181, 181, 189);
+}
+
+a:hover {
     color: rgb(181, 181, 189);
 }
 

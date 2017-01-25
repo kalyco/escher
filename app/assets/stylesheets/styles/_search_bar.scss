@@ -1,4 +1,4 @@
-a.search-bar{
+.search-bar {
 		width: 10%;
 		height: 10%;
 	  position: relative;
@@ -6,3 +6,45 @@ a.search-bar{
     color: inherit;
 	  font-size: 3vw;
 }
+
+.search-close-bar {
+	width: 10%;
+	height: 10%;
+  position: relative;
+  float: right;		
+  color: inherit;
+  font-size: 3vw;
+}
+
+.search-enter-icon, .search-enter {
+  text-decoration: none;
+  font-size: 4vw;
+  position: relative;
+  color: inherit;
+  width: 10%;
+  height: 10%;
+}
+
+.search-btn {
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.search-box {
+	width: 90%;
+	position: absolute;    
+	background-color: rgba(51, 51, 51, 0.85);
+	border-width: 0 0 0 0;
+	box-shadow: 2px 2px #111;
+	border-radius: 4px;
+}
+
+input[type=text] {
+	color: white;
+	font-family: "RobotoSlab-Regular";
+	margin: auto;
+	padding: 10px;
+}
+
+

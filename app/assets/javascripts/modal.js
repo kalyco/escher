@@ -10,9 +10,11 @@ function closeNav() {
 
 // Close any share modal when escape key is pressed
 $(document).keyup(function(e) {
-  if (e.keyCode == 27) {
-    e.preventDefault();
-    hideAllModals();
+  if ($("#mySidenav").is(":visible")) {
+  	if (e.keyCode == 27) {
+    	e.preventDefault();
+    	hideAllModals();
+  	}
   }
 });
 
