@@ -1,24 +1,10 @@
-<!-- topbar-content -->
-<div class="topbar-wrapper">
-	<div id="topbar-container" class="container-fluid">
-		<div class='row'>
-			<div class='nav navbar-left'>
-				<form class='site-nav_form site-nav__item--searchbar js-searchbar js-header-livesearch' hidden='true'>
-					<%= form_tag(pieces_path, :method => "get", id: "search-form", display: "hidden") do %>
-						<%= text_field_tag :search, params[:search], class: "search-box" %>
-						<%= button_tag(type: "submit", class: "search-btn") do %>
-							<i class="glyphicon glyphicon-search search-enter"></i>
-						<% end %>
-					<% end %>
-				</form>
-
-		    <%= link_to menu_path, { class: 'toggle-menu', remote: true, 'data-toggle': 'modal', 'data-target': '#modal-window' } do %>
-		      <i class='glyphicon glyphicon-menu-hamburger col-xs-3'></i>
-		    <% end %>
-			</div>
-			<%= render 'shared/search' %>
+<div class="nav-frame">
+	<div class="main-nav">
+		<div class='nav navbar-left'>
+	    <%= link_to menu_path, { class: 'nav-menu toggle-menu', remote: true, 'data-toggle': 'modal', 'data-target': '#modal-window' } do %>
+	      <i class='glyphicon glyphicon-menu-hamburger col-xs-3'></i>
+	    <% end %>
 		</div>
-
-  </div>
+		<%= render 'shared/search' %>
+	</div>
 </div>
-<!-- end topbar -->
