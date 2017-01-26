@@ -3,12 +3,6 @@
 }
 
 
-/* Slide in feature
-.modal.fade:not(.in) .modal-dialog {
-    -webkit-transform: translate3d(-25%, 0, 0);
-    transform: translate3d(-25%, 0, 0);
-}
-
 /* The side navigation menu */
 .sidenav {
     height: 100%;
@@ -22,16 +16,8 @@
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.row {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 20;
-    position: absolute;
-    padding: 1em;
-}
-
 .navbar-left .navbar-right {
+    @include span-columns(6);
     display: block;
     position: relative;
 }

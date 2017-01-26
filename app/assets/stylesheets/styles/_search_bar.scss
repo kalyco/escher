@@ -33,7 +33,9 @@
 
 .search-box {
 	width: 90%;
-	position: absolute;    
+	display: flex;
+	align-items: center;
+	justify-content: center;  
 	background-color: rgba(51, 51, 51, 0.85);
 	border-width: 0 0 0 0;
 	box-shadow: 2px 2px #111;

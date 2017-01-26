@@ -15,6 +15,7 @@ $(document).keyup(function(e) {
     	e.preventDefault();
     	hideAllModals();
   	}
+  	// add else if for search bar
   }
 });
 
