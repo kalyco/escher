@@ -1,10 +1,15 @@
 <div class='nav navbar-right'>
-	<a class='search-bar js-toggle-search' data-nav='search' href='#'>
-		<i class='glyphicon glyphicon-search search-bar-init'>
-			<use xlink:href='#search'></use>
-		</i>
-	</a>
-	<a class='search-close-bar js-toggle-search' hidden='true' href='#'>
-		<i class="glyphicon glyphicon-remove search-remove"></i>
-	</a>
-<div>
+	<a class='nav-search js-toggle-search' data-nav='search' href='#'>
+		<i class='glyphicon glyphicon-search search-bar-icon'></i></a>
+</div>
+
+<div class='search-nav_form js-searchbar' hidden='true'>
+	<%= form_tag(pieces_path, :method => "get", id: "search-form", display: "hidden") do %>
+		<%= text_field_tag :search, params[:search], class: "search-box" %>
+		<%= button_tag(type: "submit", class: "search-btn") do %>
+			<i class="glyphicon glyphicon-search search-enter"></i>
+		<% end %>
+	<% end %>
+	<div class='search-close-bar js-toggle-search' hidden='true'>
+		<i class="glyphicon glyphicon-remove search-remove"></i></div>
+</div>
