@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+body.modal-open div.modal-backdrop { 
+    z-index: 0; 
+}
 
 /* The side navigation menu */
 .sidenav {
