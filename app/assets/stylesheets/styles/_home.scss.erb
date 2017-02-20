@@ -27,7 +27,7 @@
 
 .topbar-wrapper {
   display: block;
-  height: 100px;
+  height: 400px;
   width: 100%;
   position: absolute;
   top: 0px;
@@ -36,7 +36,6 @@
 }
 
 #topbar-container {
-  @include outer-container;
   padding: 10px 15px;
 }
 
@@ -45,8 +44,7 @@
 .topbar-content {
 	width: 100%;
   display: flex;
-	justify-content: space-between;
-  padding: 15px 15px 0 0;
+	justify-content: center;
   font-size: 26px;
 
   .topbar-links {  
@@ -71,7 +69,12 @@
   @include outer-container;
   padding: 85px 15px 0;
 
-  .left-panel {
+  .center-panel {
+    position: absolute;
+    width: 50%;
+    color: #bbbab7;
+    width: 50%;
+    height: 50%;
 
     .home-hero-content-header {
       text-align: center;
@@ -85,15 +88,30 @@
       font-weight: 100;
     }
   }
-
-  .right-panel {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    background-image: url('<%=asset_path 'bird_fish.jpg' %>');
-  }
 }
+
 
 ul { 
   list-style-type: none;
+}
+
+// main content
+
+.main-content {
+  top: 40%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  clear: both;
+  @media($mobile) {
+    height: 200px;
+  }
+
+  .main-content-image {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background-image: url(<%='self-portrait.png'%>);
+  }
 }

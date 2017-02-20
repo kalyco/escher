@@ -1,19 +1,28 @@
 .search-bar {
-		width: 10%;
-		height: 10%;
-	  position: relative;
+	width: 30%;
+	height: 10%;
+	position: relative;
     float: right;		
     color: inherit;
 	  font-size: 3vw;
 }
 
+.search-btn {
+	position: relative;
+	right: 20px;
+}
+
+.search-container {
+	display: flex
+}
+
 .search-close-bar {
 	width: 10%;
 	height: 10%;
-  position: relative;
-  float: right;		
-  color: inherit;
-  font-size: 3vw;
+	position: absolute;
+	float: right;		
+    color: inherit;
+	font-size: 3vw;
 }
 
 .search-enter-icon, .search-enter {
@@ -25,6 +34,13 @@
   height: 10%;
 }
 
+form.site-nav_form {
+	left: 50%;
+	width: 100%;
+	position: relative;
+	margin: auto;
+}
+
 .search-btn {
 	padding: 0;
 	border: none;
@@ -32,8 +48,8 @@
 }
 
 .search-box {
-	width: 90%;
-	position: absolute;    
+	width: 100%;
+	position: relative;    
 	background-color: rgba(51, 51, 51, 0.85);
 	border-width: 0 0 0 0;
 	box-shadow: 2px 2px #111;
@@ -44,7 +60,5 @@ input[type=text] {
 	color: white;
 	font-family: "RobotoSlab-Regular";
 	margin: auto;
-	padding: 10px;
+	padding: 5px;
 }
-
-

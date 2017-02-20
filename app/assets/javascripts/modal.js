@@ -22,3 +22,4 @@ $(document).keyup(function(e) {
 function hideAllModals() {
   $('.toggle-menu').click();
 }
+
