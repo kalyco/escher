@@ -104,14 +104,18 @@ ul {
   justify-content: center;
   width: 100%;
   clear: both;
+  @media all and (max-width: 980px) {
+    top: 260px;
+  }
   @media($mobile) {
     height: 200px;
   }
 
   .main-content-image {
-    width: 300px;
+    width: 295px;
     height: 400px;
     position: relative;
     background-image: url(<%='self-portrait.png'%>);
+
   }
 }

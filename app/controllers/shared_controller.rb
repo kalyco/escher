@@ -5,4 +5,7 @@ class SharedController < ApplicationController
 	    format.js
 	  end
 	end
+
+	def test
+	end
 end

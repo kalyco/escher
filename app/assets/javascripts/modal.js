@@ -23,3 +23,13 @@ function hideAllModals() {
   $('.toggle-menu').click();
 }
 
+$(".toggle-search").click(function(){
+  $(".search-nav").toggleClass("is-active", 350);
+  $(".main-nav").addClass("is-hidden", 350);
+});
+
+
+$(".close-search").click(function(){
+  $(".search-nav").removeClass("is-active", 350);
+  $(".main-nav").removeClass("is-hidden", 350);
+});

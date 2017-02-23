@@ -23,9 +23,9 @@
 }
 
 .row {
+    @include span-columns(12);
     width: 100%;
     display: flex;
-    justify-content: space-between;
     z-index: 20;
     position: absolute;
     padding: 1em;
@@ -44,7 +44,6 @@
 }
 
 .glyphicon-remove.menu-remove {
-  padding-left: 5%;
   text-decoration: none;
   font-size: 2vw;
   color: inherit;
@@ -79,8 +78,14 @@ ul.nav-links {
     text-decoration: underline;
 }
 
-.glyphicon:hover {
-    color: rgb(181, 181, 189);
+.glyphicon {
+    @media all and (max-width: 980px) {
+        min-width: 50%;
+        min-height: 50%;
+    }
+    .glyphicon:hover {
+        color: rgb(181, 181, 189);
+    }
 }
 
 a:hover {
