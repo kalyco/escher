@@ -140,30 +140,30 @@ ul {
   .border-right {
     left: 95%;
     .right-triangle {
-      position: relative;
       right: 100px;
-      top: 140px;
       float: left;
-      width: 0;
-      height: 0;
-      border-style: solid;
       border-width: 0 100px 100px 0;
-      border-color: transparent #161616 transparent transparent;
+      border-color: transparent teal transparent transparent;
     }
   }
-
+  .right-triangle, .left-triangle {
+    position: relative;
+    margin-left: auto;
+    top: 105px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    @media all and (max-width: 980px) {
+      top: 260px;
+  }
+  }
   .border-left {
     right: 95%;
     .left-triangle {
-      position: relative;
       left: 100px;
-      top: 140px;
       float: right;
-      width: 0;
-      height: 0;
-      border-style: solid;
       border-width: 100px 100px 0 0;
-      border-color: #161616 transparent transparent transparent;
+      border-color: teal transparent transparent transparent;
     }
   }
 }
