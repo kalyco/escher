@@ -99,9 +99,12 @@ ul {
 
 .main-content {
   top: 40%;
+  height: 1000px;
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center; 
+  flex-direction: column;
   width: 100%;
   clear: both;
   @media all and (max-width: 980px) {
@@ -117,5 +120,50 @@ ul {
     position: relative;
     background-image: url(<%='self-portrait.png'%>);
 
+  }
+  .main-text {
+    width: 50%;
+    height: 67%;
+    top: 200px;
+    border: 15px groove #505358;
+    box-shadow: 60px -16px teal;
+    box-sizing: border-box;
+  }
+  .border-left,  .border-right {
+    z-index: -1;
+    height: 100%;
+    width: 5%;
+    position: absolute;
+    right: 95%;
+    background: linear-gradient( rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91) ), url('<%=asset_path 'small_steps.png' %>')
+  }
+  .border-right {
+    left: 95%;
+    .right-triangle {
+      position: relative;
+      right: 100px;
+      top: 140px;
+      float: left;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100px 100px 0;
+      border-color: transparent #161616 transparent transparent;
+    }
+  }
+
+  .border-left {
+    right: 95%;
+    .left-triangle {
+      position: relative;
+      left: 100px;
+      top: 140px;
+      float: right;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 100px 100px 0 0;
+      border-color: #161616 transparent transparent transparent;
+    }
   }
 }
