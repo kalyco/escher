@@ -25,10 +25,12 @@ en:
       title: "A Gallery Specializing in Original Escher Art."
       header: "M.C. ESCHER"
       subheader: "A Gallery Specializing in Original Escher Art."
+    main:
       gallery_info: "A large collection of Escher artwork images and info."
       original_info: "Original signed Escher woodcuts and lithographs.  No posters. No reproductions."
       featured_info: "The most recent signed Escher print available for purchase!"
       about_info: "Read about Escher. Learn what an original Escher print is, and about fakes."
       technique_info: "See how Escher created woodcuts, mezzotints, and lithographs."
+
 
 
