@@ -28,11 +28,31 @@
   </div>
   <div class="main-content-image"></div>
   <div class="main-box">
-    <div class='main-box-content1'>
+    <div class='main-box-content content_1'>
       <%= link_to("javascript:void(0)", class: 'button ico arrow-right gallery-link', style: 'opacity: 1;') do %>
-        Gallery<span ></span>
+        Gallery<span></span>
       <% end %>
-      <img class='main-image1' src='<%=asset_path '105_Second_Day_of_Creation.jpg'%>'></img>
+      <!-- <img class='main-image1' src='<%#=asset_path '105_Second_Day_of_Creation.jpg'%>'></img> -->
+    </div>
+    <div class='main-box-content content_2'>
+      <%= link_to("javascript:void(0)", class: 'button ico arrow-right original-link', style: 'opacity: 1;') do %>
+        Original Prints<span></span>
+      <% end %>
+    </div>
+    <div class='main-box-content content_3'>
+      <%= link_to("javascript:void(0)", class: 'button ico arrow-right featured-link', style: 'opacity: 1;') do %>
+        Featured<span></span>
+      <% end %>
+    </div>
+    <div class='main-box-content content_4'>
+      <%= link_to("javascript:void(0)", class: 'button ico arrow-right about-link', style: 'opacity: 1;') do %>
+        About Escher<span></span>
+      <% end %>
+    </div>
+    <div class='main-box-content content_5'>
+      <%= link_to("javascript:void(0)", class: 'button ico arrow-right techniques-link', style: 'opacity: 1;') do %>
+        Techniques<span></span>
+      <% end %>
     </div>
   </div>
 </div>

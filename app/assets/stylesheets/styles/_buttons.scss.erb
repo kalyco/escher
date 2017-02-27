@@ -1,4 +1,4 @@
-.button.ico.arrow-right {
+a.button.ico.arrow-right {
     background: 0 0;
     border-radius: 2px;
     color: inherit;
@@ -8,12 +8,21 @@
     height: 60px;
     line-height: 60px;
     outline: 0;
-    padding: 0 13px 0 25px;
+    padding: 0 10px 0 20px;
+    transition: background-position 1s;
     position: relative;
-    transition: all .3s;
     text-decoration: none;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, white 50%, #161616 50%);
+    -webkit-transition: background-position .4s;
+    -moz-transition: background-position .4s;
+    transition: background-position .4s;
 }
 
+a.button.ico:hover {
+    background-position: 0 -100%;
+    color: #505358;
+}
 
 .button.ico.arrow-right span:before {
     content: "\f054";
@@ -21,13 +30,12 @@
 }
 
 .button {
-    font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: 2px solid #2a2e31;
 }
 
-a.gallery, a.gallery:visited {
+a.button.ico, a.button.ico:visited {
     color: #fff;
     outline: 0;
     text-decoration: none;
@@ -36,21 +44,7 @@ a.gallery, a.gallery:visited {
 
 .button.ico span:before {
     font-family: FontAwesome;
-    font-size: 22px;
     line-height: 56px;
-    margin: 0 0 0 35px;
+    margin: 10px 0 0 35px;
     text-transform: none;
-}
-
-.button.ico.arrow-right:after {
-    background: black;
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all .3s;
-    width: 0;
-    z-index: -1;
-    box-sizing: border-box
 }
