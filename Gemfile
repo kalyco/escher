@@ -15,7 +15,6 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'rails_admin', '~> 1.0'
 gem "font-awesome-rails"
-gem "jquery-slick-rails"
 
 group :development, :test do
   gem 'byebug', platform: :mri
