@@ -16,7 +16,7 @@
 
 .glyphicon-menu-hamburger {
   text-decoration: none;
-  font-size: 4vw;
+  font-size: 3vw;
   position: relative;
   color: inherit;
   width: 10%;
@@ -98,11 +98,10 @@ ul {
 // main content
 
 .main-content {
-  top: 40%;
-  height: 1000px;
+  top: 30%;
+  height: 2500px;
   position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center; 
   flex-direction: column;
   width: 100%;
@@ -116,25 +115,28 @@ ul {
 
   .main-content-image {
     width: 295px;
-    height: 400px;
+    height: 375px;
     position: relative;
     background-image: url(<%='self-portrait.png'%>);
 
   }
   .main-box {
     width: 70%;
-    height: 67%;
-    top: 200px;
+    height: 85%;
     border: 15px groove #505358;
-    box-shadow: 60px -16px teal;
+    box-shadow: 50px -16px teal;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center; 
+    flex-flow: column wrap;
     .main-box-content {
-      margin: auto;
+      position: relative;
+      width: 50%;
+      height: 20%;
       text-align: center;
-      padding: 10px 0 10px 10px;
+      padding: 10px 0 10px 0;
     }
     .section_description {
       margin: auto;  
@@ -175,56 +177,4 @@ ul {
     }
   }
 }
-.fadein {
-    position:relative;
-    top:0px;
-    left:50%;
-    margin:auto;
-}
-.fadein img {
-    position:absolute;
-    left:-65px;
-    top:0;
-    -webkit-animation-name: fade;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
-}
 
-@-webkit-keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
-}
-@keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
-}
-
-#f1 {
-    background-color: lightblue;
-}
-#f2 {
-    -webkit-animation-delay: -4s;
-    background-color: yellow;
-}
-#f3 {
-    -webkit-animation-delay: -2s;
-    background-color: lightgreen;
-}
-
-.slider{
-  width:400px;
-  margin:20px auto;
-  text-align: center;
-  padding:20px;
-  .parent-slide{padding:15px;}
-  img{display: block;margin:auto;}
-}

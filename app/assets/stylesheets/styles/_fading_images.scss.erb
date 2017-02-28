@@ -1,0 +1,84 @@
+.fadein {
+    width: 85%;
+    height: 100%;
+    position:relative;
+    top: 20px;
+    margin:auto;
+    left: 20%;
+}
+.fadein img {
+    width: 100%;
+    height: 250px;
+    position:absolute;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+
+.featured_image {
+    background-image: url("<%= asset_path 'rippled_surface_signed.jpg' %>");
+    background-size: 100% 250px;
+    width: 90%;
+    height: 250px;
+    position:absolute;
+    top:0;
+    left:-95px;
+    border-style: solid;
+    border-color: black;
+}
+
+.about_image {
+    background-image: url("<%= asset_path 'escher_self.jpg' %>");
+    background-size: 100% 250px;
+    width: 100%;
+    height: 275px;
+    position:absolute;
+    top:0;
+    left:-95px;
+}
+
+.technique_image {
+    background-image: url("<%= asset_path 'drawing_hands.jpg' %>");
+    background-size: 100% 250px;
+    width: 100%;
+    height: 250px;
+    position:absolute;
+    top:0;
+    left:-95px;
+}
+
+.gallery_fade_image {
+    left:-95px;
+}
+.original_fade_image {
+    left:-95px;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#gallery3 {
+}
+
+#gallery2, #original2 {
+    -webkit-animation-delay: -4s;
+}
+#gallery1, #original1 {
+    -webkit-animation-delay: -8s;
+}
