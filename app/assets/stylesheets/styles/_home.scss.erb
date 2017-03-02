@@ -1,7 +1,7 @@
 //wraps the hero section
 
 .home-hero {
-  height: 500px;
+  height: 295px;
   width: 100%;
   float: right;
   clear: both;
@@ -16,7 +16,7 @@
 
 .glyphicon-menu-hamburger {
   text-decoration: none;
-  font-size: 4vw;
+  font-size: 3vw;
   position: relative;
   color: inherit;
   width: 10%;
@@ -47,12 +47,6 @@
 	justify-content: center;
   font-size: 26px;
 
-  .topbar-links {  
-		display: flex;
-  	font-family: "RobotoSlab-Regular";
-    color: white;
-    text-decoration: none;
-  }
 
   .topbar-links:hover {
   }
@@ -60,6 +54,12 @@
   .topbar-links:nth-last-of-type(1) {
     padding-right: 0;
   }
+}
+
+a.topbar-links {  
+	display: flex;
+  color: white;
+  text-decoration: none;
 }
 
 .home-hero-content {
@@ -98,89 +98,69 @@ ul {
 // main content
 
 .main-content {
-  top: 40%;
-  height: 1000px;
-  position: absolute;
+  height: 2500px;
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center; 
   flex-direction: column;
   width: 100%;
   clear: both;
-  @media all and (max-width: 980px) {
-    top: 260px;
-  }
-  @media($mobile) {
-    height: 200px;
-  }
 
   .main-content-image {
-    width: 295px;
-    height: 400px;
+    margin: auto;
+    max-width: 393px;
+    width: 393px;
+    height: 30%;
     position: relative;
-    background-image: url(<%='self-portrait.png'%>);
+    img.hand_portrait {
+      position: absolute;
+      bottom: -5px;
+    }
 
   }
   .main-box {
-    width: 70%;
-    height: 67%;
-    top: 200px;
+    width: 90%;
+    height: 121%;
+    overflow:hidden;
     border: 15px groove #505358;
-    box-shadow: 60px -16px teal;
+    box-shadow: 50px -16px #F44336;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center; 
+    flex-flow: column wrap;
     .main-box-content {
-      margin: auto;
+      position: relative;
+      width: 50%;
+      height: 20%;
       text-align: center;
-      padding: 10px 0 10px 10px;
+      padding: 10px 0 10px 0;
     }
     .section_description {
       margin: auto;  
     }
   }
-  .border-left,  .border-right {
-    z-index: -1;
-    height: 100%;
-    width: 5%;
+  .triangles {
     position: absolute;
-    right: 95%;
-    background: linear-gradient( rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91) ), url('<%=asset_path 'small_steps.png' %>')
+    top: 50px;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
-  .border-right {
-    left: 95%;
-    .right-triangle {
-      right: 100px;
-      float: left;
-      border-width: 0 100px 100px 0;
-      border-color: transparent teal transparent transparent;
-    }
+
+  .right-triangle {
+    border-width: 0 150px 150px 0;
+    border-color: transparent #F44336 transparent transparent;
   }
   .right-triangle, .left-triangle {
-    position: relative;
-    margin-left: auto;
-    top: 105px;
     width: 0;
     height: 0;
     border-style: solid;
   }
-  .border-left {
-    right: 95%;
-    .left-triangle {
-      left: 100px;
-      float: right;
-      border-width: 100px 100px 0 0;
-      border-color: teal transparent transparent transparent;
-    }
+
+  .left-triangle {
+    border-width: 150px 150px 0 0;
+    border-color: #F44336 transparent transparent transparent;
   }
 }
 
-.slider{
-  width:400px;
-  margin:20px auto;
-  text-align: center;
-  padding:20px;
-  .parent-slide{padding:15px;}
-  img{display: block;margin:auto;}
-}

@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170121211442) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "pieces", force: :cascade do |t|
     t.text     "title",       null: false
     t.text     "url",         null: false
@@ -28,7 +31,7 @@ ActiveRecord::Schema.define(version: 20170121211442) do
     t.text     "label",      null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["pieces_id"], name: "index_tags_on_pieces_id"
+    t.index ["pieces_id"], name: "index_tags_on_pieces_id", using: :btree
   end
 
 end

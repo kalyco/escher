@@ -20,3 +20,16 @@ img {
     display: none;
   }
 }
+
+footer {
+	width: 100%;
+	position: absolute;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	background-color: #1A1A1A;
+	display: block;
+}
+
+::selection {
+  background: #F44336;
+}
