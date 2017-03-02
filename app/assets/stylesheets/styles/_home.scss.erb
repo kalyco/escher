@@ -98,7 +98,6 @@ ul {
 // main content
 
 .main-content {
-  top: 30%;
   height: 2500px;
   position: relative;
   display: flex;
@@ -108,21 +107,24 @@ ul {
   clear: both;
 
   .main-content-image {
-    width: 295px;
-    height: 375px;
+    margin: auto;
+    max-width: 393px;
+    width: 393px;
+    height: 30%;
     position: relative;
-    background-image: url("<%=asset_path 'self-portrait.png'%>");
+    img.hand_portrait {
+      position: absolute;
+      bottom: -5px;
+    }
 
   }
   .main-box {
-    width: 70%;
-    height: 85%;
+    width: 90%;
+    height: 121%;
+    overflow:hidden;
     border: 15px groove #505358;
-    box-shadow: 50px -16px teal;
+    box-shadow: 50px -16px #F44336;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center; 
     flex-flow: column wrap;
     .main-box-content {
@@ -148,7 +150,7 @@ ul {
 
   .right-triangle {
     border-width: 0 150px 150px 0;
-    border-color: transparent teal transparent transparent;
+    border-color: transparent #F44336 transparent transparent;
   }
   .right-triangle, .left-triangle {
     width: 0;
@@ -158,7 +160,7 @@ ul {
 
   .left-triangle {
     border-width: 150px 150px 0 0;
-    border-color: teal transparent transparent transparent;
+    border-color: #F44336 transparent transparent transparent;
   }
 }
 
