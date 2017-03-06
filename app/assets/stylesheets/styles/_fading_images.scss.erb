@@ -6,11 +6,11 @@ $m-top3: 0;
     height: 100%;
     position:relative;
     top: 20px;
-    margin: 22px 0 0 150px;
+    margin: auto;
 }
 .fadein img {
     margin-right: 10px;
-    width: 50%;
+    width: 350px;
     height: 250px;
     position: relative;
     top:0;
@@ -32,54 +32,36 @@ span.images {
     bottom: 0px;
 }
 
-.main_row1, .main_row2, .main_row3 {
-    columns: 12;
-    margin: 50px 10px 0 0;
+.featured_image, .about_image, .technique_image {
+    top: 20px;
+    position: relative;
+    background-size: 100% 250px;
+    width: 350px;
+    height: 250px;
+    border-style: solid;
+    border-color: black;
 }
+
 
 .featured_image {
     background-image: url("<%= asset_path 'rippled_surface_signed.jpg' %>");
-    background-size: 100% 250px;
-    width: 600px;
-    height: 250px;
-    position: relative;
-    top:0;
-    left:-70px;
     border-style: solid;
     border-color: black;
 }
 
 .about_image {
     background-image: url("<%= asset_path 'escher_self.jpg' %>");
-    background-size: 100% 250px;
-    width: 600px;
-    height: 275px;
-    position: relative;
-    top:0;
-    left:-95px;
-    border-style: solid;
-    border-color: black;
 }
 
 .technique_image {
     background-image: url("<%= asset_path 'drawing_hands.jpg' %>");
-    background-size: 100% 250px;
-    width: 600px;
-    height: 250px;
-    position: relative;
-    top:0;
-    left:-95px;
-    border-style: solid;
-    border-color: black;
 }
 
 .gallery_fade_image {
-    left:-95px;
     border-style: solid;
     border-color: black;
 }
 .original_fade_image {
-    left:-95px;
     border-style: solid;
     border-color: black;
 }
