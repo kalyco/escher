@@ -5,63 +5,73 @@
     <img class='hand_portrait' src="<%=asset_path 'self_portrait-xl_720.png'%>";>
   </div>
   <div class="main-box">
-    <div class='main-box-content content_1'>
-      <%= link_to("javascript:void(0)", class: 'button ico arrow-down gallery-link', style: 'opacity: 1;') do %>
-        Gallery<span></span>
-      <% end %>
-      <div class='section_description gallery_info'>
-        <%= t(".gallery_info")%>
+    <div class='row main_row1'>
+      <div class='main-box-content content_3 main_group2'>
+        <%= link_to("javascript:void(0)", class: 'button ico arrow-down featured-link', style: 'opacity: 1;') do %>
+          Featured<span></span>
+        <% end %>
+        <div class='section_description featured_info'>
+          <%= t(".featured_info")%>
+        </div>
+        <div class="featured_fade fadein">
+          <div id="featured1" class='featured_image'></div>
+        </div>
       </div>
-      <div class="gallery_fade fadein">
-        <img id="gallery3" class='gallery_fade_image fade_image' src="<%= asset_path 'goriano_sicoli.jpg' %>">
-        <img id="gallery2" class='gallery_fade_image fade_image' src="<%= asset_path 'still_life.jpg' %>">
-        <img id="gallery1" class='gallery_fade_image fade_image' src="<%= asset_path 'hell_bosch.jpg' %>">
-      </div>
-    </div>
-    <div class='main-box-content content_2'>
-      <%= link_to("javascript:void(0)", class: 'button ico arrow-down original-link', style: 'opacity: 1;') do %>
-        Original Prints<span></span>
-      <% end %>
-      <div class='section_description original_info'>
-        <%= t(".original_info")%>
-      </div>
-      <div class="original_fade fadein">
-        <img id="original3" class='original_fade_image fade_image' src="<%= asset_path 'waterfall.jpg' %>">
-        <img id="original2" class='original_fade_image fade_image' src="<%= asset_path 'rippled_surface.jpg' %>">
-        <img id="original1" class='original_fade_image fade_image' src="<%= asset_path 'sky_and_water.jpg' %>">
-      </div>
-    </div>
-    <div class='main-box-content content_3'>
-      <%= link_to("javascript:void(0)", class: 'button ico arrow-down featured-link', style: 'opacity: 1;') do %>
-        Featured<span></span>
-      <% end %>
-      <div class='section_description featured_info'>
-        <%= t(".featured_info")%>
-      </div>
-      <div class="featured_fade fadein">
-        <div id="featured1" class='featured_image'></div>
+      <div class='main-box-content content_2 main_group1'>
+        <%= link_to("javascript:void(0)", class: 'button ico arrow-down original-link', style: 'opacity: 1;') do %>
+          Original Prints<span></span>
+        <% end %>
+        <div class='section_description original_info'>
+          <%= t(".original_info")%>
+        </div>
+        <div class="original_fade fadein">
+          <span class='images'>
+            <img id="original3" class='original_fade_image fade_image' src="<%= asset_path 'waterfall.jpg' %>">
+            <img id="original2" class='original_fade_image fade_image' src="<%= asset_path 'rippled_surface.jpg' %>">
+            <img id="original1" class='original_fade_image fade_image' src="<%= asset_path 'sky_and_water.jpg' %>">
+          </span>
+        </div>
       </div>
     </div>
-    <div class='main-box-content content_4'>
-      <%= link_to("javascript:void(0)", class: 'button ico arrow-down about-link', style: 'opacity: 1;') do %>
-        About Escher<span></span>
-      <% end %>
-      <div class='section_description about_info'>
-        <%= t(".about_info")%>
+    <div class='row main_row2'>
+      <div class='main-box-content content_1 main_group1'>
+        <%= link_to("javascript:void(0)", class: 'button ico arrow-down gallery-link', style: 'opacity: 1;') do %>
+          Gallery<span></span>
+        <% end %>
+        <div class='section_description gallery_info'>
+          <%= t(".gallery_info")%>
+        </div>
+        <div class="gallery_fade fadein">
+          <span class='images'>
+            <img id="gallery3" class='gallery_fade_image fade_image' src="<%= asset_path 'goriano_sicoli.jpg' %>">
+            <img id="gallery2" class='gallery_fade_image fade_image' src="<%= asset_path 'still_life.jpg' %>">
+            <img id="gallery1" class='gallery_fade_image fade_image' src="<%= asset_path 'hell_bosch.jpg' %>">
+          </span>
+        </div>
       </div>
-      <div class="about_fade fadein">
-        <div id="about1" class='about_image'></div>
+      <div class='main-box-content content_4'>
+        <%= link_to("javascript:void(0)", class: 'button ico arrow-down about-link', style: 'opacity: 1;') do %>
+          About Escher<span></span>
+        <% end %>
+        <div class='section_description about_info'>
+          <%= t(".about_info")%>
+        </div>
+        <div class="about_fade fadein">
+          <div id="about1" class='about_image'></div>
+        </div>
       </div>
     </div>
-    <div class='main-box-content content_5'>
-      <%= link_to("javascript:void(0)", class: 'button ico arrow-down techniques-link', style: 'opacity: 1;') do %>
-        Techniques<span></span>
-      <% end %>
-      <div class='section_description technique_info'>
-        <%= t(".technique_info")%>
-      </div>
-      <div class="technique_fade fadein">
-        <div id="technique1" class='technique_image'></div>
+    <div class='row main_row3'>
+      <div class='main-box-content content_5 main_group3'>
+        <%= link_to("javascript:void(0)", class: 'button ico arrow-down techniques-link', style: 'opacity: 1;') do %>
+          Techniques<span></span>
+        <% end %>
+        <div class='section_description technique_info'>
+          <%= t(".technique_info")%>
+        </div>
+        <div class="technique_fade fadein">
+          <div id="technique1" class='technique_image'></div>
+        </div>
       </div>
     </div>
   </div>
