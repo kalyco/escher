@@ -24,8 +24,11 @@
 
 .row {
     @include span-columns(4);
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     z-index: 20;
 }
 
