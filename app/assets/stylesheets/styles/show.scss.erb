@@ -1,0 +1,15 @@
+$bg-path: url('<%=asset_path 'small_steps.png' %>');
+$dark_background: linear-gradient( rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91) ), url('<%=asset_path 'small_steps.png' %>');
+$light_background: linear-gradient( rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71) ), url('<%=asset_path 'small_steps.png' %>');
+
+.show_main_content {
+	position: absolute;
+	height: 1000px;
+	width: 100%;
+	display: flex;
+	z-index: 1;
+  flex-direction: column;
+  top: 65px;
+  background: rgba(0, 0, 0, 0.91);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0)), $bg-path;
+}

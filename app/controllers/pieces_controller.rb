@@ -1,5 +1,6 @@
 class PiecesController < ApplicationController
-	before_action :set_pieces, only: [:index ]
+	before_action :set_pieces, only: [:index]
+  before_action :for_sale, only: [:original]
 
 	def index
   	if params[:search]
@@ -9,8 +10,20 @@ class PiecesController < ApplicationController
     end
   end
 
+  def show
+
+  end
+
+  def original_works
+
+  end
+
   private
   	def set_pieces
 		 @pieces = Piece.all
   	end
+
+    def for_sale
+      @pieces = Pieces.where(for_sale: true)
+    end
 end
