@@ -21,6 +21,10 @@
 	bottom: 40%;
 }
 
+.search-remove {
+	top: 10px;
+}
+
 .search-enter-icon, .search-enter {
   text-decoration: none;
   font-size: 3vw;
@@ -53,7 +57,6 @@ form.site-nav_form {
 input[type=text] {
 	color: white;
 	font-family: "RobotoSlab-Regular";
-	margin: auto;
 	padding: 5px;
 	border:1px solid #2a2e31;
   	color:#505358;
@@ -61,7 +64,6 @@ input[type=text] {
 
 .right-search-icons {
 	left: 80%;
-	bottom: 5px;
 	width: 15%;
 	position: absolute;
     color: inherit;

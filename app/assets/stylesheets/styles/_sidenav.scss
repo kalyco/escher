@@ -80,6 +80,7 @@ ul.nav-links {
     @media all and (max-width: 980px) {
         min-width: 50%;
         min-height: 50%;
+        line-height: 0;
     }
     .glyphicon:hover {
         color: rgb(181, 181, 189);
