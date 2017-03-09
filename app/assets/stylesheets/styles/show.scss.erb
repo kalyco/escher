@@ -7,9 +7,48 @@ $light_background: linear-gradient( rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71) ), 
 	height: 1000px;
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	z-index: 1;
-  flex-direction: column;
-  top: 65px;
-  background: rgba(0, 0, 0, 0.91);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0)), $bg-path;
+	top: 110px;
+	background: rgba(0, 0, 0, 0.91);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0)), $bg-path;
+}
+
+.piece_header {
+	text-align: center;
+	width: 100%;
+	font-size: 50px;
+	color: white;
+	font-family: 'Diplomata SC', cursive;
+}
+
+.show_main_image_content {
+    height: 100%;
+    position:relative;
+	.show_main_image {
+		top: 25px;
+	    position: relative;
+    	background-size: 100% 500px;
+    	width: 500px;
+    	height: 500px;
+		background-image: url(<%= asset_path("pieces/hell_bosch.jpg")%>);
+		border: 15px groove rgba(21, 21, 21, 1);
+  		box-sizing: border-box;
+	}
+}
+
+.styled_line2 {
+    width: 112px;
+    height: 47px;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.91);
+    -webkit-transform:
+        translateY(20px)
+        translateX(5px)
+        rotate(-26deg);
+    position: absolute;
+    top: 500px;
+    left: -80%;
+    z-index: 2;
 }
