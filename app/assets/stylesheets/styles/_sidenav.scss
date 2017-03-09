@@ -37,6 +37,16 @@
     position: relative;
 }
 
+.home-link{
+    text-align: center;
+}
+
+.home_button {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    font-size: 32px;
+}
 
 .nav {
     position: relative;
@@ -91,6 +101,7 @@ ul.nav-links {
 }
 
 a:hover {
+    text-decoration: none;
     color: rgb(181, 181, 189);
 }
 

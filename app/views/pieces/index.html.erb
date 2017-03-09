@@ -1,5 +1,8 @@
 <%= render 'shared/navigation' %>
 
 <% @pieces.each do |piece| %>
-	<%= piece %>
+	<div class="gallery_piece">
+		<img src='<%= asset_path "pieces/#{piece.url}" %>'>
+		<%= piece.title %>
+	</div>
 <% end %>

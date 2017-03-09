@@ -3,10 +3,10 @@
 		<i class="glyphicon glyphicon-remove menu-remove"></i>
 	<% end %>
   <ul class="nav-links">
-  	<li><a class='topbar-links gallery' href='#0'>Gallery</a></li>
-  	<li><a class='topbar-links original-prints' href='#0'>Original Prints</a></li>
+  	<li><%= link_to "Gallery", pieces_path, class: 'topbar-links gallery' %></li>
+  	<li><%= link_to "Original Prints", originals_path, class: 'topbar-links original-prints'%></li>
   	<li><a class='topbar-links featured' href='#0'>Featured</a></li>
-  	<li><a class='topbar-links about-escher' href='#0'>About Escher</a></li>
-  	<li><a class='topbar-links techniques' href='#0'>Techniques</a></li>
+  	<li><%= link_to "About Escher", about_path, class: 'topbar-links about-escher' %></li>
+  	<li><%= link_to "Techniques", techniques_path, class: 'topbar-links techniques' %></li>
   <ul>
 </div>
