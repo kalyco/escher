@@ -1,10 +1,5 @@
 <!-- topbar-content -->
 <div class="topbar-wrapper">
-	<% unless current_page?("/") %> 
-		<div class='home-link'>
-			<%= link_to "EscherSite", root_path, class: 'home_button'%>
-		</div>
-	<% end %>
 	<div id="topbar-container" class="container-fluid">
 		<form class='site-nav_form site-nav__item--searchbar js-searchbar' hidden='true'>
 			<%= form_tag(pieces_path, :method => "get", id: "search-form", display: "hidden") do %>

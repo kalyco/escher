@@ -69,21 +69,43 @@ $light_background: linear-gradient( rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71) ), 
 
 .left-show-triangle {
 	position: relative;
-	width: 33%;
+	width: 25%;
   	top: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 100px 0 100px 200px;
+	border-width: 50px 0 50px 100px;
 	border-color: transparent transparent transparent #151515;
-	background: linear-gradient(to right, #151515, #333333); //not working
+	background: linear-gradient(to right, #151515, #333333);
 }
 
 .right-show-triangle {
 	position: relative;
-	width: 33%;
+	width: 25%;
   	top: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 100px 200px 100px 0;
+	border-width: 50px 100px 50px 0;
 	border-color: transparent #151515 transparent transparent;
+}
+
+a.previous-link {
+	position: relative;
+	text-align: center;
+	width: 20%;
+	font-size: 20px;
+	color: white;
+	border-style: solid;
+	border-width: 2px;
+	margin-right: 5px;
+}
+
+a.next-link {
+	position: relative;
+	text-align: center;
+	width: 20%;
+	font-size: 20px;
+	border-style: solid;
+	border-width: 2px;
+	margin-left: 5px;
+	color: white;
 }
