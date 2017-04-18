@@ -31,6 +31,9 @@ en:
       featured_info: "The most recent signed Escher print available for purchase!"
       about_info: "Read about Escher. Learn what an original Escher print is, and about fakes."
       technique_info: "See how Escher created woodcuts, mezzotints, and lithographs."
-
+  pieces:
+    show:
+      title: "Test Title"
+      description: "Description about things and stuff"
 
 

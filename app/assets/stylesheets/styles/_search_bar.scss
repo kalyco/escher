@@ -13,12 +13,12 @@
 
 .search-container {
 	display: flex;
+	margin-top: 15px;
 }
 
 .search-close-bar {
-	position: absolute;
-	float: right;
-	bottom: 40%;
+	position: relative;
+	top: 10px;
 }
 
 .search-enter-icon, .search-enter {
@@ -53,15 +53,13 @@ form.site-nav_form {
 input[type=text] {
 	color: white;
 	font-family: "RobotoSlab-Regular";
-	margin: auto;
 	padding: 5px;
 	border:1px solid #2a2e31;
   	color:#505358;
 }
 
 .right-search-icons {
-	left: 80%;
-	bottom: 5px;
+	left: 92%;
 	width: 15%;
 	position: absolute;
     color: inherit;

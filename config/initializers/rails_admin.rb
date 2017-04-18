@@ -1,5 +1,11 @@
 RailsAdmin.config do |config|
 
+  config.model 'Tag' do
+    object_label_method do
+      :label
+    end
+  end
+
   ### Popular gems integration
 
   ## == Devise ==

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170121211442) do
+ActiveRecord::Schema.define(version: 20170309180913) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,14 +24,24 @@ ActiveRecord::Schema.define(version: 20170121211442) do
     t.boolean  "featured"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.boolean  "for_sale"
+    t.boolean  "available"
+    t.integer  "year"
+    t.string   "size"
+  end
+
+  create_table "pieces_tags", id: false, force: :cascade do |t|
+    t.integer  "piece_id"
+    t.integer  "tag_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "tags", force: :cascade do |t|
-    t.integer  "pieces_id",  null: false
     t.text     "label",      null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["pieces_id"], name: "index_tags_on_pieces_id", using: :btree
+    t.index ["label"], name: "index_tags_on_label", unique: true, using: :btree
   end
 
 end

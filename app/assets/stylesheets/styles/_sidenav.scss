@@ -24,21 +24,37 @@
 
 .row {
     @include span-columns(4);
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     z-index: 20;
 }
 
 .navbar-left .navbar-right {
-    display: block;
+    display: flex;
     position: relative;
+    justify-content: space-around;
 }
 
+.home-link{
+    text-align: center;
+}
+
+.home_button {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    font-size: 32px;
+    font-family: 'Revalia';
+}
 
 .nav {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
+    margin-top: 15px;
 }
 
 .glyphicon-remove.menu-remove {
@@ -80,6 +96,7 @@ ul.nav-links {
     @media all and (max-width: 980px) {
         min-width: 50%;
         min-height: 50%;
+        line-height: 0;
     }
     .glyphicon:hover {
         color: rgb(181, 181, 189);
@@ -87,6 +104,7 @@ ul.nav-links {
 }
 
 a:hover {
+    text-decoration: none;
     color: rgb(181, 181, 189);
 }
 

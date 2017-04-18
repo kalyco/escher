@@ -1,4 +1,14 @@
 <div class='nav navbar-right'>
+	<form class='site-nav_form site-nav__item--searchbar js-searchbar' hidden='true'>
+		<%= form_tag(pieces_path, :method => "get", id: "search-form", display: "hidden") do %>
+			<div class='search-container'>
+				<%= button_tag(type: "submit", class: "search-btn") do %>
+					<i class="glyphicon glyphicon-search search-enter"></i>
+				<% end %>
+				<%= text_field_tag :search, params[:search], class: "search-box", placeholder: "Search" %>
+			</div>
+		<% end %>
+	</form>
 	<a class='right-search-icons search-bar js-toggle-search' data-nav='search' href='#'>
 		<i class='glyphicon glyphicon-search search-bar-init'>
 			<use xlink:href='#search'></use>

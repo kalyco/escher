@@ -6,6 +6,10 @@ class SharedController < ApplicationController
 	  end
 	end
 
+	def gallery
+		@pieces = Piece.all
+	end
+
 	def test
 	end
 end
