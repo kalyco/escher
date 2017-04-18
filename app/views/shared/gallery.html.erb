@@ -1,0 +1,9 @@
+<%= render "shared/navigation" %>
+
+<div class="gallery_images">
+	<%= @pieces.each do |piece| %>
+		<div class="gallery_single_image">
+			<%= image_tag(Escher::IMAGE_PATH + piece.url) %>
+		</div>
+	<% end %>
+</div>

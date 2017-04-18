@@ -13,15 +13,11 @@
 
 .search-container {
 	display: flex;
+	margin-top: 15px;
 }
 
 .search-close-bar {
-	position: absolute;
-	float: right;
-	bottom: 40%;
-}
-
-.search-remove {
+	position: relative;
 	top: 10px;
 }
 
@@ -32,7 +28,6 @@
   color: inherit;
   width: 10%;
   height: 10%;
-  top: 8px;
 }
 
 form.site-nav_form {
@@ -64,9 +59,8 @@ input[type=text] {
 }
 
 .right-search-icons {
-	left: 90%;
+	left: 92%;
 	width: 15%;
-
 	position: absolute;
     color: inherit;
 	font-size: 3vw;

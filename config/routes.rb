@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 	  root 'static_pages#home'
 	  get "shared/menu" => 'shared#menu', as: 'menu'
 	  get "shared/test" => 'shared#test', as: 'test'
+	  get "shared/gallery" => 'shared#gallery', as: 'gallery'
 	  resources :pieces
 	  get "pieces/original_works" => "pieces/original_works", as: "originals"
 
