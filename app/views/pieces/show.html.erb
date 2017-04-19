@@ -3,16 +3,20 @@
 		<div class='piece_header'>
 			<%= t('.title') %>
 		</div>
-		<div class='show_main_image_content'>
+		<div class='show_main_image_wrapper'>
 			<div class="left-show-triangle"></div>
-			<a href class='previous-link'>previous</a>
-			<div class='show_main_image'></div>
-			<a href class='next-link'>next</a>
+			<a href class='previous-link show-link'>
+				<i class="glyphicon glyphicon-arrow-left"></i>
+			</a>
+			<a href="#" class="image_wrapper">
+				<span class="description_text">
+					<%= t('.description') %>
+				</span>
+				<div class='show_main_image'></div>
+			</a>
+			<a href class='next-link show-link'>
+				<i class="glyphicon glyphicon-arrow-right"></i>
+			</a>
 			<div class="right-show-triangle"></div>
 		</div>
-		<div class='show_description'>
-			<%= t('.description') %>
-		</div>
 	</div>
-	<div class="styled_line1"></div>
-	<div class="styled_line2"></div>

@@ -3,7 +3,11 @@
 		<i class="glyphicon glyphicon-remove menu-remove"></i>
 	<% end %>
   <ul class="nav-links">
-  	<li><%= link_to "Gallery", pieces_path, class: 'topbar-links gallery' %></li>
+    <%= if request.request_uri == '/shared/menu' %>
+      <li><%= link_to "Home", root_path, class: 'topbar-links gallery' %></li>
+  	<% else %>
+      <li><%= link_to "Gallery", pieces_path, class: 'topbar-links gallery' %></li>
+    <% end %>
   	<li><%= link_to "Original Prints", originals_path, class: 'topbar-links original-prints'%></li>
   	<li><a class='topbar-links featured' href='#0'>Featured</a></li>
   	<li><%= link_to "About Escher", about_path, class: 'topbar-links about-escher' %></li>
