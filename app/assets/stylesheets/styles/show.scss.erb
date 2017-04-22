@@ -1,21 +1,22 @@
-$bg-path: url('<%=asset_path 'small_steps.png' %>');
-$dark_background: linear-gradient( rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91) ), url('<%=asset_path 'small_steps.png' %>');
-$light_background: linear-gradient( rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71) ), url('<%=asset_path 'small_steps.png' %>');
+$bg-path: url('<%=asset_path 'footer_lodyas.png' %>');
+$dark_background: linear-gradient( rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91) ), url('<%=asset_path 'footer_lodyas.png' %>');
+$light_background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('<%=asset_path 'footer_lodyas.png' %>');
 
 .show_main_content {
-	position: absolute;
+	position: relative;
 	height: 1200px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	z-index: 1;
-	top: 110px;
+	top: 100px;
 	background: rgba(0, 0, 0, 0.91);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0)), $bg-path;
+    background: $light_background;
 }
 
 .piece_header {
+	margin-top: 20px;	
 	text-align: center;
 	width: 100%;
 	font-size: 50px;
@@ -23,7 +24,7 @@ $light_background: linear-gradient( rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71) ), 
 	font-family: 'Revalia';
 }
 
-.show_main_image_content {
+.show_main_image_wrapper {
   top: 50px;
   display: flex;
   justify-content: space-between;
@@ -32,17 +33,46 @@ $light_background: linear-gradient( rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71) ), 
   align-items: center;
   margin-bottom: 50px;
 	.show_main_image {
-		top: 25px;
+		z-index: 1;
 	    position: relative;
-    	background-size: 100% 500px;
     	width: 100%;
-  		max-width: 500px;
-  		min-width: 300px;
-    	height: 500px;
+    	min-height: 637px;
 		background-image: url(<%= asset_path("pieces/hell_bosch.jpg")%>);
+		background-repeat: no-repeat;
 		border: 15px groove rgba(21, 21, 21, 1);
+		background-position: center center;
   		box-sizing: border-box;
 	}
+}
+
+.image_wrapper {
+	top: 25px;
+	position: relative;
+	padding: 0;
+    min-width: 530px;
+    display:block;
+}
+
+.description_text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: white;
+    font-family: 'Revalia';
+    font-size: 32px;
+    background-color: #333333;
+    line-height:100px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.description_text:hover {
+    opacity: 0.7;
 }
 
 .styled_line2 {
@@ -74,7 +104,7 @@ $light_background: linear-gradient( rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71) ), 
 	height: 0;
 	border-style: solid;
 	border-width: 50px 0 50px 100px;
-	border-color: transparent transparent transparent #151515;
+	border-color: transparent transparent transparent black;
 	background: linear-gradient(to right, #151515, #333333);
 }
 
@@ -85,27 +115,14 @@ $light_background: linear-gradient( rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71) ), 
 	height: 0;
 	border-style: solid;
 	border-width: 50px 100px 50px 0;
-	border-color: transparent #151515 transparent transparent;
+	border-color: transparent black transparent transparent;
 }
 
-a.previous-link {
+a.show-link {
 	position: relative;
 	text-align: center;
-	width: 20%;
-	font-size: 20px;
-	color: white;
-	border-style: solid;
-	border-width: 2px;
-	margin-right: 5px;
-}
-
-a.next-link {
-	position: relative;
-	text-align: center;
-	width: 20%;
-	font-size: 20px;
-	border-style: solid;
-	border-width: 2px;
-	margin-left: 5px;
-	color: white;
+	font-size: 3vw;
+	color: black;
+	margin: 5px;
+	padding: 2px;
 }
