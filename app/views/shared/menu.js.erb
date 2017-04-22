@@ -1,1 +1,1 @@
-$("#modal-window").html("<%= escape_javascript(render 'shared/menu') %>");
+$("#modal-window").html("<%= escape_javascript(render 'shared/menu', home: params['home']) %>");
