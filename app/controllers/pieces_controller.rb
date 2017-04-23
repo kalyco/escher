@@ -18,6 +18,30 @@ class PiecesController < ApplicationController
 
   end
 
+  def lithographs_and_mezzotints
+    if params[:search]
+      @pieces = Piece.search(params[:search]).order("featured DESC")
+    else
+      @pieces = Piece.all.where(category: ("mezzotint" || "lithograph")).order('featured DESC')
+    end
+  end
+
+  def woodcuts
+    if params[:search]
+      @pieces = Piece.search(params[:search]).order("featured DESC")
+    else
+      @pieces = Piece.all.where(category: ("woodcut")).order('featured DESC')
+    end
+  end
+
+  def watercolors
+    if params[:search]
+      @pieces = Piece.search(params[:search]).order("featured DESC")
+    else
+      @pieces = Piece.all.where(category: ("watercolors")).order('featured DESC')
+    end
+  end
+
   private
   	def set_pieces
 		 @pieces = Piece.all
@@ -26,7 +50,6 @@ class PiecesController < ApplicationController
     def set_piece
      # @piece = Piece.find(params[:id])
     end
-
 
     def for_sale
       @pieces = Pieces.where(for_sale: true)

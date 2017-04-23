@@ -1,10 +1,10 @@
 <!-- topbar-content -->
-<% if request.original_fullpath == "/pieces/show" %>
-	<div class="topbar-wrapper short">
-	<% @home_link = 1 %>
-<% else %>
+<% if request.original_fullpath == "/" %>
 	<div class="topbar-wrapper">
 	<% @home_link = 0 %>
+<% else %>
+	<div class="topbar-wrapper short">
+	<% @home_link = 1 %>
 <% end %>
 	<div id="topbar-container" class="container-fluid">
 		<div class='row'>
