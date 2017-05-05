@@ -33,3 +33,13 @@ $(".close-search").click(function(){
   $(".search-nav").removeClass("is-active", 350);
   $(".main-nav").removeClass("is-hidden", 350);
 });
+
+// $(document).ready(function () {
+//     $('a.sun_and_moon').on('hover', function () {
+//         var image = $(this).attr('img');
+//         //alert(image);
+//         $('#myModal').on('show.bs.modal', function () {
+//             $(".showimage").attr("src", image);
+//         });
+//     });
+// });

@@ -31,9 +31,29 @@ en:
       featured_info: "The most recent signed Escher print available for purchase!"
       about_info: "Read about Escher. Learn what an original Escher print is, and about fakes."
       technique_info: "See how Escher created woodcuts, mezzotints, and lithographs."
+    techniques:
+      title: "How did Escher make his prints?"
+      description1: "Printmaking is a laborious process.  First, Escher started with an idea.  Then, he transformed the thought into a drawing, in the case of the print Knots, there were over 70 preparatory sketches.
+      "
+      description2: "Escher transferred a mirror image of the final sketch onto a smooth woodblock by using tracing paper. Then he meticulously carved away anything that he didn't want to print.  He needed a separate block for each color in the final print.  The 'grey block' for Spirals is seen to the right." 
+      description4: "Escher also made lithographs, which involve drawing an image onto a stone block and then printing from the stone.  And, he made eight mezzotints.  A mezzotint is created by etching an image into a smooth copper plate and then printing from the copper plate.  'Eye,' one of his most famous images, is a mezzotint print."
+      description5: "During his life Escher made only 448 master works.  He never had an apprentice, and therefore, printed all of his own woodcuts.  Many of the larger pieces are annotated 'eigen druk,' which loosely means 'by my own pressure (hand).'"
+    mezzotint:
+      title: "Eye Mezzotint States"
+      description1: "In order to make a mezzotint, the artist starts with a very rough copper plate.  Ink sits in the grooves on the plate and when pressed onto paper it leaves the grooves and transfers to the paper.  In essence, a blank plate prints black. The artist then uses a tool to smooth out areas.  The smoother the area the less ink sticks to it, the lighter the printing.  A smooth plate prints white."
+      description2: "You can see how dark 'Eye' started and how Escher both lightened and softened areas.  Look at how the skull picks up both whiteness and dimensionality.  I wonder why the upper lashes were last to appear.."
+
   pieces:
     show:
       title: "Test Title"
       description: "Description about things and stuff"
+    lithographs_and_mezzotints:
+      title: "MC Escher Lithographs and Mezzotints"
+      description1: "    Escher created his first lithograph in 1920, but he didn’t add them to his repertoire until 1929.   Although not nearly as numerous as woodcuts, some of his most famous images are lithographs, such as 'Drawing Hands' or 'Reptiles'.   
+    The lithograph technique differs significantly from wood engraving.  A mirror image of the final print is drawn on a smooth stone with a black grease pencil.  Printing involves a water layer and an ink layer and then pressing the image onto paper.  M.C. Escher hired a professional lithographer to print his stones because it is such a tedious process. "
+      description2: "The early lithographs focus primarily on Italian land and cityscapes as he lived in Italy for 11 
+years during this period.  In the mid 1930’s Escher started composing artworks depicting reflective
+surfaces.  His 'Hand With Reflecting Sphere' is the most famous of a handful of spherical mirror pieces."
+    
 
 
