@@ -163,6 +163,20 @@ p.label_techniques {
 }
 
 a.sun_and_moon {
-	text-decoration: underline;
 	color: $escher-orange;
+    img {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 1s ease-in-out;
+        :hover {
+            position: absolute;
+            left: 100px;
+            opacity: 1.0;
+            transition: opacity .55s ease-in-out;
+            -moz-transition: opacity .55s ease-in-out;
+            -webkit-transition: opacity .55s ease-in-out;
+        }
+    }
 }
+
