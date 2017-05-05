@@ -101,8 +101,9 @@ p.label_techniques {
 			display: flex;
 			justify-content: space-between;
 			flex-direction: column;
-			margin: 10px;
+			margin: 15px;
 			h4 {
+                font-size: 20px;
 				text-align: center;
 			}
 			animation: fadein 3s;
@@ -162,20 +163,25 @@ p.label_techniques {
     }
 }
 
-a.sun_and_moon {
+a.sun_and_moon, .three_worlds_idea, .spirals{
 	color: $escher-orange;
     img {
-        opacity: 1;
+        position: absolute;
+        height: 30%;
+        width: 30%;
+        left: 900px;
+        bottom: 300px;
+        opacity: 0;
         transition: opacity 1s ease-in-out;
         -moz-transition: opacity 1s ease-in-out;
         -webkit-transition: opacity 1s ease-in-out;
-        :hover {
-            position: absolute;
-            left: 100px;
+    }
+    &:hover {
+        img {
             opacity: 1.0;
-            transition: opacity .55s ease-in-out;
-            -moz-transition: opacity .55s ease-in-out;
-            -webkit-transition: opacity .55s ease-in-out;
+            transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -webkit-transition: opacity 1s ease-in-out;
         }
     }
 }

@@ -34,12 +34,12 @@ $(".close-search").click(function(){
   $(".main-nav").removeClass("is-hidden", 350);
 });
 
-$(document).ready(function () {
-    $('img').on('click', function () {
-        var image = $(this).attr('src');
-        //alert(image);
-        $('#myModal').on('show.bs.modal', function () {
-            $(".showimage").attr("src", image);
-        });
-    });
-});
+// $(document).ready(function () {
+//     $('a.sun_and_moon').on('hover', function () {
+//         var image = $(this).attr('img');
+//         //alert(image);
+//         $('#myModal').on('show.bs.modal', function () {
+//             $(".showimage").attr("src", image);
+//         });
+//     });
+// });
