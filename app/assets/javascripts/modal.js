@@ -18,6 +18,7 @@ $(document).keyup(function(e) {
   }
 });
 
+
 // Hide any open modals
 function hideAllModals() {
   $('.toggle-menu').click();
@@ -34,12 +35,26 @@ $(".close-search").click(function(){
   $(".main-nav").removeClass("is-hidden", 350);
 });
 
-// $(document).ready(function () {
-//     $('a.sun_and_moon').on('hover', function () {
-//         var image = $(this).attr('img');
-//         //alert(image);
-//         $('#myModal').on('show.bs.modal', function () {
-//             $(".showimage").attr("src", image);
-//         });
-//     });
-// });
+$(function() {
+  $(".toggle_circle_limit").click(function() {
+    $('.circle_modal').fadeIn(1000);
+    $('.box').addClass('custom-overlay');
+    $('.box').off('mouseenter mouseleave');
+    $('.box').off('before after');
+    $('#close_circle').fadeIn(1000);
+    $('#close_circle').on('mouseenter mouseleave');
+    $('#close_circle').on('before after');
+
+  });
+});
+
+$(function() {
+  $("#circle_remove").click(function() {
+    $('.circle_modal').fadeOn(1000, 0);
+    $('.box').removeClass('custom-overlay');
+    $('.box').on('mouseenter mouseleave');
+    $('.box').on('before after');
+    $('#close_circle').off('mouseenter mouseleave');
+    $('#close_circle').off('before after');
+  });
+});

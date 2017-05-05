@@ -3,17 +3,24 @@
 </div>
 <body class="technique_hero"></body>
 <div class="box">
+  <a href='#' id='close_circle'>
+    <i class="glyphicon glyphicon-remove circle-remove"></i>
+  </a>
   <p class="label_techniques"><span class="align">Techniques</span></p>
   <div class="box-inner">
   	<div class="techniques_content">
-		<h2><%= t(".title") %></h2>
+		<h2><%= t(".title") %></h2><br><br>
 		<h4>Printmaking is a laborious process. First, Escher started with an <a href='#' class='three_worlds_idea'>idea.<img src=<%= asset_path('three_worlds_idea.png') %>></img></a> Then, he transformed the thought into a drawing, in the case of the print Knots, there were over 70 preparatory sketches.</h4><br>
 		<h4>Escher transferred a mirror image of the final sketch onto a smooth woodblock by using tracing paper. Then he meticulously carved away anything that he didn't want to print. He needed a separate block for each color in the final print, like in the 'grey block' that was used for <a href='#' class='spirals'>Spirals.<img src=<%= asset_path('spirals.png') %>></img></a></h4><br>
-		<h4>Escher only needed to ink the block and press it onto paper for black and white wood engravings.  However, he used a registration system to print multi-colored pieces.   The print <a href='#' class='sun_and_moon'>Sun and Moon<img src=<%= asset_path('sun_and_moon.png') %>></img></a> required four blocks.  Here the first three blocks, red, yellow, and blue, have been printed.  The black is always the final block. Click here to see the block from Circle Limit 1.</h4><br>
+		<h4>Escher only needed to ink the block and press it onto paper for black and white wood engravings.  However, he used a registration system to print multi-colored pieces.   The print <a href='#' class='sun_and_moon'>Sun and Moon<img src=<%= asset_path('sun_and_moon.png') %>></img></a> required four blocks.  Here the first three blocks, red, yellow, and blue, have been printed.  The black is always the final block. Click <a href='#' class='toggle_circle_limit'>here</a> to see the block from Circle Limit 1.</h4><br>
 		<h4><%= t(".description4") %></h4><br>
 		<h4><%= t(".description5") %></h4><br>
 	</div>
   </div>
 </div>
 
+<div class='circle_limit_modal'>
+	<img class="circle_modal" src=<%= asset_path('circle_limit1.jpg') %>>
+	</img>
+</div>
 <div class='short-footer'></div>

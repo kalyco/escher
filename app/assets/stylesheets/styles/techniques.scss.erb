@@ -24,6 +24,9 @@ $pipes : 4;
 	padding:0;
 	background-image: url(<%= asset_path('escher_background1.jpg') %>);
 	background-repeat: no-repeat;
+    .is-hidden {
+
+    }
 }
 
 .techniques_content {
@@ -33,10 +36,12 @@ $pipes : 4;
 p.label_techniques {
 	position: relative;
 	font-size: 40px;
-	font-family: 'RobotoSlab-Thin', sans-serif;
+	font-family: 'Taviraj', serif;
+    font-weight:normal;
 	text-align: center;
 	opacity: 1;
 	top: 40%;
+    text-decoration: none;
 }
 
 .box {
@@ -53,6 +58,9 @@ p.label_techniques {
     top: 200px;
     cursor: pointer;
     transition: ($transition_duration*$pipes)+$transition_duration ease;
+    #close_circle {
+        display: none;
+    }
     &:before {
         position: absolute; 
         width: 0; 
@@ -99,11 +107,12 @@ p.label_techniques {
         }
         .techniques_content {
 			display: flex;
+            font-family: 'Taviraj', serif;
 			justify-content: space-between;
 			flex-direction: column;
 			margin: 15px;
 			h4 {
-                font-size: 20px;
+                font-size: 19px;
 				text-align: center;
 			}
 			animation: fadein 3s;
@@ -186,3 +195,43 @@ a.sun_and_moon, .three_worlds_idea, .spirals{
     }
 }
 
+
+
+a.toggle_circle_limit {
+    color: $escher-orange;
+}
+
+.circle_modal {
+    opacity: 1;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background:url(tint20.png) 0 0 repeat;
+    background:rgba(0,0,0,0.2);
+    border-radius:14px;
+    padding:8px;
+}
+
+
+.custom-overlay {
+    background: black;
+    opacity: 0.7;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    z-index: -2;
+}
+#close_circle {
+    z-index: 1;
+    display: block;
+    position: relative;
+    float: right;
+    margin: 15px;
+    font-size: 20px;
+}
